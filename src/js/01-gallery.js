@@ -25,11 +25,7 @@ const makeGalleryImage = ({ preview, original, description } = {}) => {
 
   const onGalaryClick = (event)=>{
     event.preventDefault()
-    const {target} = event
-    // const altPath = target.src
-    // console.log(target.src);
-    
-
+   
     const lightbox = new SimpleLightbox('.gallery a',{
         captionsData: "alt",
         captionDelay: 250,
