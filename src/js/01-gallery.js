@@ -22,17 +22,10 @@ const makeGalleryImage = ({ preview, original, description } = {}) => {
   const galleryCardsString=galleryCardsArr.join('')
 
   galleryListEl.insertAdjacentHTML('afterbegin', galleryCardsString);
-
-  const onGalaryClick = (event)=>{
-    event.preventDefault()
    
     const lightbox = new SimpleLightbox('.gallery a',{
         captionsData: "alt",
         captionDelay: 250,
         overlayOpacity:0.9,
     } );
-   
-  }
-
-  galleryListEl.addEventListener('click',onGalaryClick)
 

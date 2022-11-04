@@ -5,20 +5,7 @@ const iframe = document.querySelector('iframe');
     console.log(player);
 
 
-    player.setCurrentTime(localStorage.videoplayerCurrentTime).then(function(seconds) {
-   
-        
-    }).catch(function(error) {
-        switch (error.name) {
-            case 'RangeError':
-                
-                break;
-    
-            default:
-              
-                break;
-        }
-    });
+    player.setCurrentTime(localStorage.videoplayerCurrentTime) 
 
     const onPlay = function(data) {
         
